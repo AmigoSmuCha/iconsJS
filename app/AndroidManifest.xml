@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.iconjs">
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_app"
+        android:label="iconJS"
+        android:theme="@android:style/Theme.Material.NoActionBar">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- what launchers look for to list an icon pack -->
+            <intent-filter>
+                <action android:name="com.novalauncher.THEME" />
+                <action android:name="org.adw.launcher.THEMES" />
+                <action android:name="com.teslacoilsw.launcher.THEME" />
+                <action android:name="com.gau.go.launcherex.theme" />
+                <action android:name="com.fede.launcher.THEME_ICONPACK" />
+                <action android:name="com.anddoes.launcher.THEME" />
+                <action android:name="ch.deletescape.lawnchair.ICONPACK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.adw.launcher.icons.ACTION_PICK_ICON" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
